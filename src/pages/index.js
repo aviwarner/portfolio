@@ -2,6 +2,7 @@ import React from "react"
 import { GiCarrier } from 'react-icons/gi';
 
 import Layout from "../components/layout"
+import ContactBar from "../components/contactBar"
 import SEO from "../components/seo"
 
 import './styles.css';
@@ -21,6 +22,7 @@ const IndexPage = () => (
       most days.
     </p>
     <p>I live in Alameda, where the nuclear wessels are. <GiCarrier className='inline-icon' /></p>
+    <ContactBar />
   </Layout>
 )
 

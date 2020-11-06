@@ -66,3 +66,15 @@ footer{
     top: .125em;
     width: 20px;
 }
+
+#contact-bar {
+    margin-top: 2rem;
+}
+
+.contact-icon {
+    color: #4F6C6B;
+    height: 30px;
+    margin-right: 2rem;
+    text-decoration: none;
+    width: 30px;
+}
