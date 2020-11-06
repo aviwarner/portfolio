@@ -14,12 +14,12 @@ const IndexPage = () => (
     <h1>Hi! I'm Avi Warner :)</h1>
     <h2>I'm a software engineer</h2>
     <p>
-      These days, I'm working at Collective Health building a better healthcare experience
-      for Americans.
+      These days, I work at Collective Health building a better healthcare experience
+      for Americans. It is, as you can imagine, a tough assignment.
     </p>
     <p>
-      I build and maintain Node.js backends, React & AngularJS frontends, and deal with AWS
-      most days.
+      I build and maintain Node.js backends, React & AngularJS frontends, and deal with a
+      variety of AWS services pretty often.
     </p>
     <p>I live in Alameda, where the nuclear wessels are. <GiCarrier className='inline-icon' /></p>
     <ContactBar />
