@@ -1,8 +1,16 @@
+$primary-font-stack: 'Libre Baskerville', serif;
+$secondary-font-stack: 'Work Sans', sans-serif;
+$primary-color: #463F3A;
+$secondary-color: #8A817C;
+$nav-hover-color: #E0AFA0;
+$background-color: #F4F3EE;
+
+
 body {
-    font-family: 'Libre Baskerville', serif;
+    font-family: $primary-font-stack;
     font-weight: 400;
-    background-color: #F4F3EE;
-    color: #463F3A;
+    background-color: $background-color;
+    color: $primary-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -56,7 +64,7 @@ footer{
 .nav-link {
     text-decoration: none;
     margin-right: 1rem;
-    color: #8A817C;
+    color: $secondary-color;
     transition: transform 0.1s linear;
     box-sizing: border-box;
 }
@@ -64,8 +72,8 @@ footer{
 .nav-link:hover {
     transform: rotate(5deg);
     background-size: cover;
-    border: 4px solid #E0AFA0;
-    background: #E0AFA0;
+    border: 4px solid $nav-hover-color;
+    background: $nav-hover-color;
 }
 
 .active-nav-link {
@@ -86,7 +94,7 @@ footer{
 }
 
 .contact-icon {
-    color: #4F6C6B;
+    color: $secondary-color;
     height: 30px;
     margin-right: 2rem;
     text-decoration: none;
