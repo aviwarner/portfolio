@@ -53,7 +53,7 @@ Password: Pasted API Token
 
 7) Open the new cloned trigger using below body for the target message: 
 
-```
+```json
 {
   "ticket": {
     "additional_collaborators": "{{ticket.organization.custom_fields.org_cc}},{{ticket.requester.custom_fields.user_cc}}"
