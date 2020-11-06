@@ -40,7 +40,8 @@ We're going to setup a new target & trigger:
 4) Use the settings below
 
 ```
-URL: https://YOURSUBDOMAIN.zendesk.com/api/v2/tickets/{{ticket.id}}.json
+URL: 
+https://YOURSUBDOMAIN.zendesk.com/api/v2/tickets/{{ticket.id}}.json
 Method: PUT
 Content Type: JSON
 Username: youremail@yourdomain.com/token
@@ -56,7 +57,9 @@ Password: Pasted API Token
 ```json
 {
   "ticket": {
-    "additional_collaborators": "{{ticket.organization.custom_fields.org_cc}},{{ticket.requester.custom_fields.user_cc}}"
+    "additional_collaborators": 
+      "{{ticket.organization.custom_fields.org_cc}},
+      {{ticket.requester.custom_fields.user_cc}}"
   }
 }
 ```
