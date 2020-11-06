@@ -1,8 +1,8 @@
 body {
     font-family: 'Libre Baskerville', serif;
     font-weight: 400;
-    background-color: #EDEDED;
-    color: #1E292B;
+    background-color: #F4F3EE;
+    color: #463F3A;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,6 +33,7 @@ nav {
     display: flex;
     flex-direction: row;
     padding-top: 0.5rem;
+    min-height: 30px;
 }
 
 footer{
@@ -54,8 +55,20 @@ footer{
   
 .nav-link {
     text-decoration: none;
-    color: #4F6C6B;
     margin-right: 1rem;
+    color: #8A817C;
+    transition: transform 0.1s linear;
+}
+
+.nav-link:hover {
+    transform: rotate(5deg);
+    background-size: cover;
+    border: 4px solid #E0AFA0;
+    background: #E0AFA0;
+}
+
+.active-nav-link {
+    text-decoration: underline;
 }
 
 .inline-icon {

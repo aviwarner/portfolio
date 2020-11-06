@@ -17,7 +17,7 @@ const Header = ({ siteTitle }) => (
   <header>
     <nav>
       {PAGES.map(page => (
-        <Link className="nav-link" to={page.route}>
+        <Link className="nav-link" activeClassName="active-nav-link" to={page.route}>
           {page.title}
         </Link>
       ))}
