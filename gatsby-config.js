@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Home`,
+    title: `Avi Warner`,
     description: `A personal page.`,
     author: `@aviwarner`,
   },
@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/a.svg`, // This path is relative to the root of the site.
       },
     },
     `gatsby-background-image`,
