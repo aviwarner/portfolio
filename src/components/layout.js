@@ -29,9 +29,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
       </div>
       <footer>
-        © {new Date().getFullYear()}, Built with
-          {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a> and a keyboard.
+        Built by Avi Warner with a mouse {'&'} keyboard.
       </footer>
     </div>
   )
