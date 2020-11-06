@@ -5,11 +5,13 @@ import React from "react"
 const PAGES = [
   {
     title: "Home",
-    route: "/"
+    route: "/",
+    key: "nav-home"
   },
   {
     title: 'Carbon Copier',
-    route: "/carbon-copier"
+    route: "/carbon-copier",
+    key: "nav-cc"
   }
 ]
 
@@ -17,7 +19,12 @@ const Header = ({ siteTitle }) => (
   <header>
     <nav>
       {PAGES.map(page => (
-        <Link className="nav-link" activeClassName="active-nav-link" to={page.route}>
+        <Link
+          className="nav-link"
+          activeClassName="active-nav-link"
+          to={page.route}
+          key={page.key}
+        >
           {page.title}
         </Link>
       ))}
