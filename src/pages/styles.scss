@@ -88,13 +88,15 @@ footer{
 }
 
 #contact-bar {
-    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem auto 0 auto;
+    width: 30%;
 }
 
 .contact-icon {
     color: $secondary-color;
     height: 30px;
-    margin-right: 2rem;
     text-decoration: none;
     width: 30px;
 }
