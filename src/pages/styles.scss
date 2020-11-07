@@ -11,6 +11,7 @@ body {
     font-weight: 400;
     background-color: $background-color;
     color: $primary-color;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,8 +42,8 @@ nav {
     border-bottom: 1px solid $secondary-color;
     display: flex;
     flex-direction: row;
-    min-height: 30px;
-    padding-top: 0.5rem;
+    min-height: 2.5rem;
+    padding-top: 2rem;
 }
 
 footer{
