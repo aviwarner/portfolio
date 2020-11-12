@@ -2,7 +2,6 @@ import React from "react"
 import { GiCarrier } from 'react-icons/gi';
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import ContactBar from "../components/contactBar"
 import SEO from "../components/seo"
 

@@ -8,10 +8,10 @@ $breakpoint-mobile: 768px;
 
 
 body {
-    font-family: $primary-font-stack;
-    font-weight: 400;
     background-color: $background-color;
     color: $primary-color;
+    font-family: $primary-font-stack;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -28,24 +28,13 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 3px; 
 }
 
-main {
-    padding: 2rem;
-    max-width: 38rem;
-    margin: auto;
-}
-
-header {
-    padding: 0 2rem;
-    margin: 0 auto; 
-    max-width: 38rem;
-}
-
 nav {
     border-bottom: 1px solid $secondary-color;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
     min-height: 2.5rem;
-    padding-top: 2rem;
 }
 
 footer{
@@ -53,7 +42,6 @@ footer{
     bottom: 0;
     height: 2.5rem;
     width: 100%;
-    // padding: 0 2rem;
     text-align: center;
 }
 
@@ -61,11 +49,17 @@ footer{
     footer {
         font-size: 12px;
     }
+
+    pre {
+        font-size: 10px;
+    }
   }
 
 #page-container {
-    position: relative;
+    margin: auto;
+    max-width: 38rem;
     min-height: 100vh;
+    position: relative;
 }
 
 #content-wrap {
