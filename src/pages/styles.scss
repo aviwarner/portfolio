@@ -4,6 +4,7 @@ $primary-color: #463F3A;
 $secondary-color: #8A817C;
 $nav-hover-color: #E0AFA0;
 $background-color: #F4F3EE;
+$breakpoint-mobile: 768px;
 
 
 body {
@@ -34,6 +35,7 @@ main {
 }
 
 header {
+    padding: 0 2rem;
     margin: 0 auto; 
     max-width: 38rem;
 }
@@ -51,8 +53,15 @@ footer{
     bottom: 0;
     height: 2.5rem;
     width: 100%;
+    // padding: 0 2rem;
     text-align: center;
 }
+
+@media screen and (max-width: $breakpoint-mobile) {
+    footer {
+        font-size: 12px;
+    }
+  }
 
 #page-container {
     position: relative;
