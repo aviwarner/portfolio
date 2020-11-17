@@ -29,7 +29,8 @@ const Layout = ({ children }) => {
         <main>{children}</main>
       </div>
       <footer>
-        Built by Avi Warner with a mouse {'&'} keyboard.
+        Built by Avi Warner with a mouse, keyboard {'& '}
+        <a href="https://www.gatsbyjs.com">Gatsby</a>.
       </footer>
     </div>
   )
