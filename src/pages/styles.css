@@ -67,6 +67,10 @@ footer{
     #page-container {
         max-width: 80%;
     }
+
+    .nav-link {
+        font-size: 12px;
+    }
 }
 
 #content-wrap {
