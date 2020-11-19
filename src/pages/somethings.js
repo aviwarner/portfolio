@@ -28,10 +28,10 @@ const SomethingsPage = ({ data }) => {
                     <p>
                         Not really. When my son was three, he went through a phase where every night,
                         when I tucked him in, he'd want to share a particular injustice he suffered
-                        or just something that bothered him that day. They'd always be prefaced with...
+                        or just something that bothered him that day. They'd always be prefaced with 'Something that hurt me is'...
                     </p>
                     <p>
-                        'Something that hurt me is...' and then an explanation. I've collected some of
+                        and then an explanation. I've collected some of
                         them here.
                     </p>
                     <div className='somethings-container'>
