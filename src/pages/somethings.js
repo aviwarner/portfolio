@@ -28,11 +28,13 @@ const SomethingsPage = ({ data }) => {
                     <p>
                         Not really. When my son was three, he went through a phase where every night,
                         when I tucked him in, he'd want to share a particular injustice he suffered
-                        or just something that bothered him that day. They'd always be prefaced with 'Something that hurt me is'...
+                        or just something that bothered him that day.
                     </p>
                     <p>
-                        and then an explanation. I've collected some of
-                        them here.
+                        Every night, he'd get tucked into bed and say,
+                    </p>
+                    <p>
+                        "Dad, something that hurt me is..."
                     </p>
                     <div className='somethings-container'>
                         {posts.map((post, index) =>
@@ -54,13 +56,13 @@ export default SomethingsPage
 
 export const query = graphql`
 query MyQuery {
-    allSanityPost(filter: {categories: {elemMatch: {id: {eq: "-a50698d8-fb68-52b8-b1fd-529ede979f32"}}}}) {
-      nodes {
-        title
+                    allSanityPost(filter: {categories: {elemMatch: {id: {eq: "-a50698d8-fb68-52b8-b1fd-529ede979f32"}}}}) {
+                    nodes {
+                    title
         body {
-          children {
-            text
-          }
+                    children {
+                    text
+                }
         }
       }
     }
