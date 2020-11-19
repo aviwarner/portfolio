@@ -51,6 +51,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-remark`
+    `gatsby-transformer-remark`,
+    {
+      resolve: 'gatsby-source-sanity',
+      options: {
+        projectId: 'ygqrivfn',
+        dataset: 'production',
+        token: process.env.SANITY_TOKEN,
+      },
+    }
   ],
 }

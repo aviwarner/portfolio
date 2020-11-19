@@ -111,3 +111,28 @@ footer{
     text-decoration: none;
     width: 30px;
 }
+
+.somethings-container {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 3rem 0;
+}
+
+.somethings-item {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1rem;
+    transition: all .2s ease-in-out; 
+    flex: 0 1 15rem;
+}
+
+.somethings-item:hover {
+    transform: scale(1.05);
+}
+
+.somethings-item--active {
+    transition: height 0.7s linear;
+    font-weight: 700;
+}

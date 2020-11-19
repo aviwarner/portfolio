@@ -12,6 +12,11 @@ const PAGES = [
     title: 'Carbon Copier',
     route: "/carbon-copier",
     key: "nav-cc"
+  },
+  {
+    title: 'Somethings',
+    route: "/somethings",
+    key: "nav-somethings"
   }
 ]
 
