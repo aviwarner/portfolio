@@ -17,8 +17,7 @@ const IndexPage = () => {
       <h1>Hi! I'm Avi Warner :)</h1>
       <h2>I'm a software engineer</h2>
       <p>
-        These days, I work at Collective Health building a better healthcare experience
-        for Americans. It is, as you can imagine, a tough assignment.
+        These days, I work at <a href="http://mural.co/">Mural</a> as a full stack engineer.
       </p>
       <p>
         I build and maintain Node.js backends, React & AngularJS frontends, and deal with a
