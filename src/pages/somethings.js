@@ -21,7 +21,7 @@ const SomethingsPage = ({ data }) => {
         <Layout>
             <div className="project-container">
                 <div className="project">
-                    <h1>Something that hurt me</h1>
+                    <h1>Something I didn't like</h1>
                     <p>
                         Sounds dramatic right?
                     </p>
@@ -34,7 +34,7 @@ const SomethingsPage = ({ data }) => {
                         Every night, he'd get tucked into bed and say,
                     </p>
                     <p>
-                        "Dad, something that hurt me is..."
+                        "Dad, something I didn't like was..."
                     </p>
                     <div className='somethings-container'>
                         {posts.map((post, index) =>

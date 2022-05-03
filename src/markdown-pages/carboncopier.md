@@ -5,6 +5,10 @@ title: "Carbon Copier"
 featuredImage: ../images/cc_ticket_view.jpg
 ---
 
+### App no longer supported / Available in Zendesk marketplace
+
+Due to Zendesk's deprecation of HTTP targets which are used by the app to function, this app is no longer supported and I have removed the listing from Zendesk's app marketplace. I'm leaving this page up in case current users still need these troubleshooting guides. 
+
 ### Overview
 
 **[Carbon Copier](https://www.zendesk.com/apps/support/carbon-copier/)** is a Zendesk app that helps CC end-users when tickets are created for a specific organization or requester.
