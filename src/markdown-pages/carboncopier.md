@@ -5,43 +5,17 @@ title: "Carbon Copier"
 featuredImage: ../images/cc_ticket_view.jpg
 ---
 
-### App no longer supported / Available in Zendesk marketplace
-
-Due to Zendesk's deprecation of HTTP targets which are used by the app to function, this app is no longer supported and I have removed the listing from Zendesk's app marketplace. I'm leaving this page up in case current users still need these troubleshooting guides. 
-
 ### Overview
 
-**[Carbon Copier](https://www.zendesk.com/apps/support/carbon-copier/)** is a Zendesk app that helps CC end-users when tickets are created for a specific organization or requester.
+**[Carbon Copier](https://www.zendesk.com/apps/support/carbon-copier/)** was a Zendesk app that helps CC end-users when tickets are created for a specific organization or requester.
 
-### Installation
+### App no longer supported / Available in Zendesk marketplace
 
-When installing, make sure your Zendesk subdomain (_not including *.zendesk.com_), email and an API key are filled in correctly. As part of the installation process, the app will create everything you need. One target, a trigger, and 2 custom fields (one for users, one for organizations).
+Due to Zendesk's deprecation of HTTP targets which are used by the app to function, **this app is no longer supported and I have removed the listing from Zendesk's app marketplace**. As I no longer have Zendesk dev account, I haven't had a chance to explore how this could be converted. There are not plans to update the app.
 
-### Using Carbon Copier
+I found this resource for creating Zendesk webhooks: https://support.zendesk.com/hc/en-us/articles/1260803996569-Creating-a-webhook
 
-Using Carbon Copier is super easy. Add end-user emails or user IDs (comma separated) to the **Emails to CC** fields on any User or any Organization.
-
-When a new ticket is created on that Users behalf, or as part of an Organization, any noted end-users will be added to the ticket as a CC.
-
-This app creates a number of **non-editable elements** in your Zendesk instance (a User field, an Organization field, a Target, and a Trigger).
-
-### Known Issues
-
-#### App doesn't add CCs
-
-Go to 'Channels' > 'API' > 'Target Failures' and take a look at the failures there. The most common issue is an authentication error.
-
-That suggests your _API key or subdomain change or were entered incorrectly on installation_. Changing them in the app setup after installation won't fix this, but here are steps to get it working again!
-
-We're going to setup a new target & trigger:
-
-1) If you haven't already, [generate a Zendesk API token](https://support.zendesk.com/hc/en-us/articles/226022787-Generating-a-new-API-token-)
-
-2) Copy the token, and the email address you were signed in with when you generated the token.
-
-3) Go to Settings > Extensions and create a new 'HTTP Target'
-
-4) Use the settings below
+Here's the setup for the current target, it looks like there are fields on webhooks that are equivalent: 
 
 ```
 URL: 
@@ -49,16 +23,8 @@ https://YOURSUBDOMAIN.zendesk.com/api/v2/tickets/{{ticket.id}}.json
 Method: PUT
 Content Type: JSON
 Username: youremail@yourdomain.com/token
-Password: Pasted API Token
-```
-
-5) Test the target to make sure it's working 
-
-6) Go to your triggers, clone the trigger created by the app.
-
-7) Open the new cloned trigger using below body for the target message: 
-
-```json
+Password: Generated API Token
+At that point, you should be able to create a new trigger that sends the following body to your new target: 
 {
   "ticket": {
     "additional_collaborators": 
@@ -68,10 +34,4 @@ Password: Pasted API Token
 }
 ```
 
-8) Deactivate the original trigger
-
-This should work now! If it does not, go back to Target Failures and see if there are any new failures that have popped up, you might need to correct the Target Username and/or Password.
-
-### Something else?
-
-Have an issue not listed above? [Email me](mailto:aviwarner@gmail.com).
+You'll need to create a new webhook and make sure it's authenticated properly. Please reach out to support@zendesk.com for assistance using their webhook feature.
